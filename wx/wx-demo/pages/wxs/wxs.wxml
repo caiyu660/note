@@ -1,0 +1,20 @@
+<wxs src="../../wxs/comm.wxs" module="comm" />
+
+<wxs module="foo">
+    var some_msg = "hello world";
+    module.exports = {
+        msg : some_msg,
+    }
+</wxs>
+
+<view class='wxs-outside'>
+    <view>
+        {{comm.foo}}
+    </view>
+    <view>
+        {{comm.bar(123)}}
+    </view>
+</view>
+<view class='wxs-inner'>
+    {{foo.msg}}
+</view>

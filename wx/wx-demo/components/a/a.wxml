@@ -1,0 +1,5 @@
+<!--components/a/a.wxml-->
+<view class='component-a' bind:updataA="updataA">
+   <view><text style="color: red;">component A</text>   {{content}}</view>
+   <slot/>
+</view>

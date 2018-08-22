@@ -1,0 +1,6 @@
+<template name="msg">
+  <view class='msg'>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>

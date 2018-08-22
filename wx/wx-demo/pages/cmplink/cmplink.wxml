@@ -1,0 +1,6 @@
+<!--pages/component/component.wxml-->
+<view>
+    <a>
+       <b/>
+    </a>
+</view>

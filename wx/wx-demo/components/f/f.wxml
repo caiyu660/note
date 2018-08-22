@@ -1,0 +1,4 @@
+<!--components/f/f.wxml-->
+<text>
+   {{index}}
+</text>

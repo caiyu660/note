@@ -1,0 +1,5 @@
+/* components/a/a.wxss */
+.component-a{
+    border: 1px solid red;
+    padding: 20px;
+}

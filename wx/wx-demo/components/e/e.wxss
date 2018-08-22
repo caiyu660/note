@@ -1,0 +1,5 @@
+/* components/e/e.wxss */
+.component-e{
+    border: 1px solid gray;
+    margin-top: 20px;
+}

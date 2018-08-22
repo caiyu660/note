@@ -1,0 +1,7 @@
+/* pages/wxs/wxs.wxss */
+.wxs-outside{
+   border: 1rpx solid red;
+}
+.wxs-inner{
+    border: 1rpx solid blue;
+}

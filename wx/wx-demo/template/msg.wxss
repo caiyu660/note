@@ -1,0 +1,3 @@
+.msg{
+    border: 1rpx solid green;
+}

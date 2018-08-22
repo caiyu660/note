@@ -1,0 +1,10 @@
+<!--components/b/b.wxml-->
+<view class='component-b' bind:updataA="update">
+   <view><text style="color: red;">Component B</text>  {{content}}</view>
+   <button bindtap="updateC">update C</button>
+   <button bind:tap="updateD">update D</button>
+   <button bind:tap="updateE">update E</button>
+   <c bind:updateB="update" content="{{cData}}"/>
+   <d bind:updateBroC="updateBroC" content="{{dData}}"/>
+   <e id='cmp-e' bind:updateB="update" /> 
+</view>

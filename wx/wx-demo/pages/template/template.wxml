@@ -1,0 +1,16 @@
+
+<import src="../../template/msg.wxml"/>
+
+<template name="student">
+    <block>
+       <view class='student'> 
+            <view>学生信息</view>
+            <view bind:tap="showName"> 姓名: {{stu.name}} </view>
+            <view> 性别: {{stu.gender}} </view>
+            <view> 年龄: {{stu.age}}岁 </view>
+       </view> 
+    </block>
+</template>
+
+<template is="student" data="{{stu}}"/>
+<template is="msg" data="{{...msg}}"/>

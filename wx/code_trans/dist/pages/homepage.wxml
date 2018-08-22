@@ -1,0 +1,13 @@
+<view age="{{age}}">
+  <block>
+    <block wx:if="{{age > 10}}">
+      <text>haha</text>
+    </block>
+    <block wx:else>
+      <text>hihi</text>
+    </block>
+  </block>
+  <text>this is mini grama</text>
+  <text bindtap="setName">{{name}}</text>
+  <text wx:key="{{index}}" wx:for="list" wx:for-item="item" wx:for-index="index">{{item}}</text>
+</view>

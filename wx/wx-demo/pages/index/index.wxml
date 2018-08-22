@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='demo-list'>
+         <button class='demo-item' bind:tap="openPageLifeCycyle">
+            页面生命周期
+         </button>
+         <button class='demo-item' bind:tap="openPageLink">
+            页面通信
+         </button>
+         <button class='demo-item' bind:tap="openCmpLifePage">
+            组件生命周期
+         </button>
+         <button class='demo-item' bind:tap="openCmplink">
+             组件通信
+         </button>
+         <button class='demo-item' bind:tap="openTemplate">
+             模版
+         </button>
+         <button class='demo-item' bind:tap="openWxs">
+             wxs
+         </button>
+    </view>
+</view>

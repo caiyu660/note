@@ -1,0 +1,5 @@
+/* pages/template/template.wxss */
+@import "../../template/msg.wxss";  
+.student{
+    border: 1rpx red solid;
+}

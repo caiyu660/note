@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+      "c": "./../c/c",
+      "d": "./../d/d",
+      "e": "./../e/e"
+  }
+}

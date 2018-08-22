@@ -1,0 +1,5 @@
+<!--pages/pagelink/pagelink.wxml-->
+<view>{{recieveData}}</view>
+<view>{{pageInfo}}</view>
+<view>{{globalInfo}}</view>
+<view>{{storeInfo}}</view>

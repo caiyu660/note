@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="name" />
+        <button type="submit" id="send">send</button>
+    </form>
+    <script>
+        window.onload = function(){
+            console.log(history.length)
+            console.log("www.baidu.com")
+            document.getElementById('form').addEventListener('submit', function(e){
+                e.preventDefault();
+            })
+            document.getElementById('send').onclick = function(){
+                ws.send(document.getElementById('name').value)
+            }
+            
+        }
+        // 打开一个WebSocket:
+        var ws = new WebSocket('ws://localhost:3000/test');
+        // 响应onmessage事件:
+        ws.onmessage = function(msg) { 
+            show(msg)
+        };
+        // 给服务器发送一个字符串:
+        ws.onopen = function(){
+            ws.send('Hello!')
+        };
+        function show(msg){
+            console.log(msg.data)
+            var div = document.createElement('div');
+            div.innerHTML = msg.data;
+            document.body.appendChild(div);
+        }
+    </script>
+</body>
+</html>

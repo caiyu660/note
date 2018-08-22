@@ -1,0 +1,5 @@
+<!--components/d/d.wxml-->
+<view class='component-d'>
+   <Button bind:tap="updateC">updateC</Button>
+   <text style="color: red;">Component D</text>  {{content}}
+</view>

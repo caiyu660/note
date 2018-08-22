@@ -1,0 +1,5 @@
+/* components/c/c.wxss */
+.component-c{
+    border: 1px solid purple;
+    margin-top: 20px;
+}

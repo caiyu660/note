@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+    <Button bind:tap="reverse">
+       反转
+    </Button>
+    <f wx:for="{{list}}" index="{{item.id}}" wx:key="id"/>
+</view>

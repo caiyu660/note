@@ -1,0 +1,21 @@
+<!--pages/pagelife/pagelife.wxml-->
+<view>
+<text>事件冒泡和捕获</text>
+<view id="outer" bindtap="handleTap1">
+  outer view
+  <view id="middle" catchtap="handleTap2">
+    middle view
+    <view id="inner" data-name='innerview' bind:tap="handleTap3">
+      inner view
+    </view>
+  </view>
+</view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" style="width:100%;" mode="scaleToFill"/>
+    </swiper-item>
+  </block>
+</swiper>
